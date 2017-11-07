@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Vật tư y tế</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../css/frmNhaCungCap.css">
+	<link rel="stylesheet" type="text/css" href="..css/popup.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<meta charset="UTF-8">
+	<style type="text/css">
+    #over {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+    
+   }
+
+#content{
+    position: absolute;
+     z-index:99999;       
+}
+</style>
+
+	<script>
+		function openSupplier(evt, string) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("frm-table");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(string).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		<!--dialog_delete -->
+		 $(document).ready(function() {
+		            $('#a-delete').click(function(e) {
+		            e.preventDefault();
+		            $.ajax({
+		                url: 'frmDeleteNhaCC.html',
+		                type: 'POST',
+		                dataType: 'html',
+		                data: {
+		                    
+		                }
+		            }).done(function(ketqua) {
+		                $('#content').html(ketqua);
+		                });
+		            $('body').append('<div id="over">');
+		            $('#over').fadeIn(300);
+
+		            });
+		            });
+</script>
+
+
+</head>
+<body>
+#parse("header.vm")
+<div id ="frm-container">
+	<div class ="tab-info">
+		<button class = "tablinks" onclick = "openSupplier(event, 'thuoc')"> Thuốc </button>
+		<button class = "tablinks" onclick = "openSupplier(event, 'thietbi')">Vật liệu nha khoa </button>
+	</div>
+	<div class ="frm-content">
+		<div class ="tabBtn">
+			<button class="btn" type = "button" >insert</button>
+		</div>
+		<!-- tab-thuoc -->
+		<div class ="frm-table" id="thuoc" style ="display: block">
+			             
+			  <table class="table table-hover">
+			    <thead>
+			      <tr class ="tbl-title">
+			        <th>STT</th>
+			        <th>Mã NCC</th>
+			        <th>Nhà cung cấp</th>
+			        <th>SĐT</th>
+			        <th>Địa chỉ</th>
+			        <th>Email</th>
+			        <th>Action</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH thuôc Bình Minh</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        	<a href="#" id="a-delete"><span class="fa fa-trash"></span></a>
+			        	<div id="content"></div>
+			        </td>
+
+			      </tr>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH thuôc Bình Minh</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-trash"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH thuôc Bình Minh</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-trash"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>	
+		<!--end tab thuoc -->
+		<!-- tab nhà cc vật tư y tế-->
+		<div class ="frm-table" id="thietbi" style ="display: none">
+			
+			              
+			  <table class="table table-hover">
+			    <thead>
+			      <tr class ="tbl-title">
+			        <th>STT</th>
+			        <th>Mã NCC</th>
+			        <th>Nhaf cung cấp</th>
+			        <th>SĐT</th>
+			        <th>Địa chỉ</th>
+			        <th>Email</th>
+			        <th>Action</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH vật tư Gia Bảo</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-trash"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        </td>
+
+			      </tr>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH vật tư Gia Bảo</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-trash"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>1</td>
+			        <td>NCC01</td>
+			        <td>Công TNHH vật tư Gia Bảo</td>
+			        <td>012396695</td>
+			        <td>Hà Nội</td>
+			        <td>thuoctot@gmail.com</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-trash"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+		<!--end tab nha cc vật tư y tế -->
+	</div>
+</div>
+</body>
+</html>

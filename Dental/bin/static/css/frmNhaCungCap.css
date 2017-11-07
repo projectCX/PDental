@@ -1,0 +1,64 @@
+body{
+    background-color: yellowgreen;
+}
+#frm-container{
+	
+  width: 1100px;
+  height: 700px;
+  margin: 60px 130px;
+  padding: 40px 40px;
+    background-color: white;
+}
+.tab-info {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: 50px;
+}
+.tab-info .tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+div.tab-info button:hover {
+    background-color: #ddd;
+}
+div.tab-info button.active {
+    background-color: #ccc;
+}
+.frm-table{
+	
+    padding: 6px 12px;
+    -moz-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.btn{
+	float: right;
+	margin-right: 50px;
+	background: #B40404;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 100px;
+	border: 1px solid whitesmoke;
+}
+.btn:hover{
+    background: yellowgreen;
+    color: yellow;
+}
+.tbl-title{
+   
+}
+a{
+    margin-right: 4px;
+}
+td #content{
+    margin-left: -610px;
+    margin-top: -200px;
+}

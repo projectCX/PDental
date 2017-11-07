@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>ID: <input type ="text"value="$action.id"></p>
+<p>ID: <input type ="text" value="$action.name"></p>
+<p>ID: <input type ="text" value="$action.address"></p>
+<p>ID: <input type ="text" value="$action.phone"></p>
+
+</body>
+</html>

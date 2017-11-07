@@ -1,0 +1,74 @@
+#DangKiKham{
+  width: 860px;
+  height: 800px;
+  background: gold;
+  margin: 30px;
+  margin-left: 180px;
+  padding: 30px;
+}
+.title{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-top: 4px;
+  margin-block-end: 15px;
+}
+.btn-search{
+  width: 100%;
+  height: 60px;
+  margin-block-end: 20px;
+  
+}
+
+.info-left{
+  width: 45%;
+  float: left;
+ 
+}
+.info-right{
+  width: 45%;
+  float: right;
+}
+.fill-info label{
+  color: #585858;
+  font-weight: bold;
+}
+.fill-info input{
+  font-size: 15px;
+}
+.info-right button{
+  margin-top: 32px;
+  margin-left: 250px;
+}
+.info-right button:hover{
+  background-color: #BCF5A9;
+  border: 1px solid #64FE2E;
+  
+}
+.fill-info{
+  width: 100%;
+  height: 300px;
+
+}
+.listDangKi{
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  background-color: white;
+}
+.info-locate{
+  width: 45%;
+  height: 100%;
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.search{
+  width: 45%;
+  height: 100%;
+  float: right;
+
+}
+.info-locate h6{
+  font-weight: bold;
+}

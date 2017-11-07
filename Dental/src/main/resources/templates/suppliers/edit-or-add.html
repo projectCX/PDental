@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/frmInsertNhaCC.css">
+	<meta charset ="utf-8">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+<body>
+<div id= "i-main">
+	<form action ="#">
+		<div class ="a-content">	
+		<div class ="left">
+			<div class ="in-left">
+		    	<label class ="">Tên nhà cung cấp</label>
+		    	<input type="text" class="form-control" id="name" placeholder ="Name">
+		    </div>
+		    <div class ="in-left">
+		    	<label class ="">Địa chỉ: </label>
+		    	<input type="text" class="form-control" id="birthday" placeholder =" dd/mm/yyyy">
+		    </div>
+		     <div class ="in-left">
+		    	<label class ="">SĐT: </label>
+		    	<input type="text" class="form-control" id="name" placeholder ="specialized">
+		    </div>
+		    <div class ="in-left">
+		    	<label class ="">Email: </label>
+		    	<input type="text" class="form-control" id="address" placeholder ="Address">
+		    </div>
+		   
+		</div>
+		<div class ="right">
+			<lable>Loại cung cấp</lable>
+			<select name ="status"  id ="select-ncc">
+				<option value= "status-thuoc">Thuốc</option>
+				<option value= "status-vattuyte">Vật tư y tế</option>
+			</select>
+		</div>
+		
+		<div class ="btn-add"><button type ="submit" class ="">Save</button>
+			<a href="/suppliers/suppliersBrowser">Cancel</a>
+		</div>
+		
+	</form>
+</div>
+</body>
+</html>

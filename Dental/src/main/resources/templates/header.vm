@@ -1,0 +1,66 @@
+<Doctype html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+</head>
+<body>
+<div id="header">
+	<div class ="contact">
+		<div class ="detail-contact">
+			<div class ="icon-avatar">
+				<h6><img src="../images/songjoongki.jpg" style ="width: 34px; height: 34px; border-radius: 20px" >
+				Bui Ngoc Anh</h6>
+			</div>
+		</div>
+	</div> 
+	<div class="panel">
+		<div class ="avatar-dental"></div>
+		<div class ="menu">
+			<ul class="menu-catelogy">
+				<li class ="has-sub">
+					<a href="">Trang chủ</a>
+				</li>
+				<li class ="has-sub">
+					<a href="">Hồ sơ khám</a>
+				</li>
+				<li class ="has-sub">
+					<a href="">Thành viên</a>
+
+				</li>
+				<li class ="has-sub">
+					<a href="">Thuốc - Vật tư</a>
+				</li>
+				<li class ="has-sub">
+					<a href="">Dịch vụ</a>
+				</li>
+				<li class ="has-sub">
+					<a href="/supplier/suppliersBrower">Nhà cung cấp</a>
+				</li>
+				<li class ="has-sub">
+					<a href="">Lương</a>
+					<ul class ="sub-menu">
+						<li>
+							<a href="">Mức lương</a>
+						</li>	
+						<li><a href="">Bảng lương</a></li>
+					</ul>	
+				</li>
+				<li class ="has-sub">
+					<a href="">Báo cáo</a>
+					<ul class ="sub-menu">
+						<li><a href="">Thu - Chi</a></li>
+						<li><a href="">Doanh Thu</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

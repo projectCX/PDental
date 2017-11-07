@@ -1,0 +1,99 @@
+body{
+  background: gold;
+}
+.frm_hoso{
+  width:1100px;
+  height: 650px;
+  background: white;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+.info-left{
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.info-right{
+  width: 70%;
+  height: 100%;
+  float: right;
+
+}
+.btn-lichhen{
+  width: 200px;
+  height: 100px;
+
+  padding: 30px;
+ background-color: gold;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.info-patient{
+  width: 100%;
+  height: 500px;
+ background-color: ;
+}
+.info-patient-left{
+  width: 45%;
+  height: 120px;
+  float: left;
+  padding: 20px 40px;
+  background-color: #FAFAFA;
+}
+.info-patient-right{
+  width: 55%;
+  height: 120px;
+  float: left;
+  padding: 20px 20px;
+  background-color: #FAFAFA;
+}
+.info-right{
+  width: 70%;
+  height: 120px;
+  float: right;
+}
+.title-info{
+  width: 100%;
+  height: 50px;
+    background: #f0f0f0;
+   border-bottom: 2px solid #cccccc;
+  text-align: center;
+  padding-top: 6px;
+  margin-bottom: 20px;
+}
+.title-info h5{
+  text-transform: uppercase;
+  color: #333333;
+  line-height: 1.5;
+}
+.info-diagnose{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 20px;
+}
+.info-patient-left span{
+  margin-left: 10px;
+}
+.info-patient-right span{
+  margin-left: 10px;
+}
+.info-diagnose button{
+  float: right;
+  margin-right: 30px;
+}
+.list-treatment-tikect tr td div{
+  width: 70px;
+  height: 30px;
+  border: 1px solid #088A08;
+  border-radius: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  text-align: center;
+  box-shadow: 2px 2px 5px #D8D8D8 inset;
+    
+}
+.list-treatment-tikect tr td div h6{
+  font-size: 14px;
+}

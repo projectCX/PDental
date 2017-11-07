@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Person id</th>
+        <th>Name</th>
+        <th>Child_id</th>
+        <th>Partent_id</th>
+      </tr>
+    </thead>
+    <tbody>
+     			#foreach ($a in $list)
+					<tr>
+						<td>$a.id</td>
+						<td>$a.name</td>
+						<td>
+						#foreach ($b in $a.partyChild)
+							$b.child.name --
+						#end
+						</td>
+						<td>
+						#foreach ($c in $a.partyParent)
+								$c.child.name --
+						#end
+						</td>
+						<td><a href="/editParty?id=$!{a.id}">EDIT</a></td>
+					</tr>
+			#end
+    </tbody>
+ </table>
+
+</body>
+</html>

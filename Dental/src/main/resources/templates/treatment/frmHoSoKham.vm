@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Hồ sơ bệnh nhân </title>
+	
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/frmHoSoKham.css">
+</head>
+<body>
+
+<div class="frm_hoso">
+	<div class="info-left">
+		<div class="btn-lichhen">
+			<a href="">Đặt Lịch Hẹn</a>
+		</div>
+	</div>
+	<div class ="info-right">
+		<div class="info-patient">
+		 <div class ="title-info">
+		 	<h5>Hồ sơ khám</h5>
+		 </div>
+			<div class="info-patient-left">
+				<h6>Bệnh nhân:<span>Bùi Văn Vịt</span></h6>
+				<h6>Ngày sinh:<span>20/10/1995</span></h6>
+				<h6>Địa chỉ:<span>20-Hàng Đào</span></h6>
+			</div>
+			<div class="info-patient-right">
+				<h6>Giới tính: <span>Nữ</span></h6>
+				<h6>Điện thoại:<span>09876544333</span></h6>
+			</div>
+			<div class="info-diagnose">
+				<form action ="#">
+				    <div class="form-group">
+				      <label for="comment">Khám lâm sàng:</label><span class ="fa fa-caret-down " id="btn-down" style ="margin-left: 5px; color: #848484"></span><span class ="fa fa-caret-up" id="btn-down3" style ="margin-left: 5px; color: #848484"></span>
+				      <textarea class="form-control" rows="4" name="foretoken" style ="display: none" id ="foretoken"></textarea>
+				    </div>
+				    <div class="form-group">
+				      <label for="comment">Chẩn đoán:</label><span class ="fa fa-caret-down " id="btn-down1" style ="margin-left: 5px; color: #848484"></span><span class ="fa fa-caret-up" id="btn-down4" style ="margin-left: 5px; color: #848484"></span>
+				      <textarea class="form-control" rows="3" name="diagnose" style ="display: none" id="diagnose"></textarea>
+				    </div>
+				    <div class="form-group">
+				      <label for="comment">Phương pháp điều trị:</label><span class ="fa fa-caret-down " id="btn-down2" style ="margin-left: 5px; color: #848484"></span><span class ="fa fa-caret-up" id="btn-down5" style ="margin-left: 5px; color: #848484"></span>
+				      <textarea class="form-control" rows="3" name="result" style ="display: none" id ="result"></textarea>
+				    </div>
+				    <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class ="list-treatment-tikect">
+				<table class="table table-hover">
+				    <thead>
+				      <tr>
+				        <th>STT</th>
+				        <th>Ngày khám</th>
+				        <th>Kết quả khám</th>
+				        <th>Dịch vụ</th>
+				        <th>Status</th>
+				        <th>Action</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>20/11/2017</td>
+				        <td>Mọc răng khôn</td>
+				        <td>Nhổ răng khôn</td>
+				        <td><div ><h6>pending</h6></div></td>
+				        <td><a href="/dental/PhieuKham">XemChiTiet</a></td>
+				      </tr>
+				      <tr>
+				        
+				        <td>2</td>
+				        <td>20/11/2017</td>
+				        <td>Mọc răng khôn</td>
+				        <td>Nhổ răng khôn</td>
+				        <td><div><h6>done</h6></div></td>
+				         <td><a href="/dental/PhieuKham">XemChiTiet</a></td>
+				      </tr>
+				      <tr>
+				        <td>3</td>
+				        <td>20/11/2017</td>
+				        <td>Mọc răng khôn</td>
+				        <td>Nhổ răng khôn</td>
+				        <td><div><h6>no action</h6></div></td>
+				         <td><a href="/dental/PhieuKham">XemChiTiet</a></td>
+				      </tr>
+				    </tbody>
+  				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	jQuery('#btn-down').click(function(){
+		$('#foretoken').show(500);
+	});
+	jQuery('#btn-down1').click(function(){
+		$('#diagnose').show(500);
+	});
+	jQuery('#btn-down2').click(function(){
+		$('#result').show(500);
+	});
+	jQuery('#btn-down3').click(function(){
+		$('#foretoken').hide(500);
+	});
+	jQuery('#btn-down4').click(function(){
+		$('#diagnose').hide(500);
+	});
+	jQuery('#btn-down5').click(function(){
+		$('#result').hide(500);
+	});
+	
+</script>
+</body>
+</html>

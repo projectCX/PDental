@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Đăng Kí Khám Của Nhân Viên</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/btn-search.css">
+	<link rel="stylesheet" type="text/css" href="../css/DangKiKham.css">
+
+</head>
+<body>
+<div id="DangKiKham">
+
+	
+	<div class="btn-search">
+	<div class="info-locate">
+		<h6>Ngày:<span> 20/10/2017</span></h6>
+		<span><h6>Chi Nhánh Hà Nội</h6></span>
+	</div>
+	<div class="search">
+		<form action ="" method ="post">
+			<input type ="text" placeholder ="Search for...">
+			 <button type="button" class="fa fa-search" data-toggle="modal" data-target="#mySearch"></button>
+		</form>
+	</div>
+	</div>
+	<div class="title">
+		<h4>Đăng Kí Khám</h4>
+	</div>
+		
+	<div class="fill-info">
+		<form action="#">
+		<div class="info-left">
+			<div class="form-group">
+		      <label for="">Bệnh nhân:</label>
+		      <input type="text" class="form-control" id="" placeholder="Enter name" name="name">
+		    </div>
+		    <div class="form-group">
+		      <label for="">Ngày sinh:</label>
+		      <input type="text" class="form-control" id="" placeholder="Enter birthday" name="dob">
+		    </div>
+		     <div class="form-group">
+		      <label for="">Địa Chỉ:</label>
+		      <input type="text" class="form-control" id="" placeholder="Enter birthday" name="address">
+		    </div>
+		</div>
+		<div class="info-right">
+			<div class="form-group">
+		      <label for="">Giới tính:</label></br>
+		      <input name="sex" type="radio" value="1" class="boy" style="margin-right: 5px"><span>Nam</span>
+		      <input name="sex" type="radio" value="0" class ="girl" style="margin-left: 30px"><span>Nữ</span>
+		    </div>
+		    <div class="form-group" style="margin-top: 28px">
+		      <label for="pwd">Điện thoại:</label>
+		      <input type="text" class="form-control" id="" placeholder="Enter phone" name="phone">
+		    </div>
+		    <button type="submit" class="btn btn-default">Submit</button>
+		</div>
+		      
+  		</form>
+	</div>	
+
+	<div class="listDangKi">
+		<table class="table table-hover">
+		    <thead>
+		      <tr>
+		        <th>STT</th>
+		        <th>Bệnh nhân</th>
+		        <th>Ngày sinh</th>
+		        <th>Phone</th>
+		        <th>Địa Chỉ</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>1</td>
+		        <td>Phạm Minh Trang</td>
+		        <td>20/10/2017</td>
+		        <td>01696117127</td>
+		        <td>45-Hàng Mã-Hà Nội</td>
+		      </tr>
+		      <tr>
+		        <td>1</td>
+		        <td>Trầng Hoằng</td>
+		        <td>20/10/2017</td>
+		        <td>01696117127</td>
+		        <td>45-Hàng Mã-Hà Nội</td>
+		      </tr>
+		      <tr>
+		        <td>1</td>
+		        <td>Mai Hồng Lan</td>
+		        <td>20/10/2017</td>
+		        <td>01696117127</td>
+		        <td>45-Hàng Mã-Hà Nội</td>
+		      </tr>
+		    </tbody>
+  </table>
+	</div>
+
+
+</div>
+</body>
+</html>

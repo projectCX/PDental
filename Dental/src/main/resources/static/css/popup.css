@@ -1,0 +1,155 @@
+/*popup */
+.m-header{
+    width: 100%;
+    height: 32px;
+    background-color: #BDBDBD;
+}
+.m-main{
+    width: 100%;
+    height: 75%;
+    background-color: lightblue;
+    padding-top: 23px;
+    padding-right: 20px;
+}
+.m-left{
+    width: 45%;
+    height: 70%;
+    background-color: ;
+    float: left;
+    padding-left: 30px;
+}
+.m-right{
+    width: 55%;
+    height: 89%;
+    float: left;
+    background-color: white;
+    /*! margin-top: 9px; */
+}
+.m-main .m-left img{
+    width: 241px;
+    height: 300px;
+}
+.modal-content{
+    width: 746px;
+    height: 500px;
+   margin-left: -100px;
+    margin-top: 70px;  
+    background-color: #BDBDBD;
+}
+
+.modal-footer{
+    height: 65px;
+    background-color: white;
+}
+.modal-content-confirm{
+    width: 600px;
+    height: 220px;
+    background-color: lightyellow;
+    margin-top: 170px;
+    /*! margin-left: 300px; */
+    padding-top: 50px;
+    border-radius: 7px;
+}
+.confirm-content{
+    height: 80px;
+    background-color: #BDBDBD;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    padding-top: 20px;
+    
+}
+.btn-confirm{
+    width: 70px;
+    height: 35px;
+    background-color: #4DBF20;
+    ! border-radius: 10px; 
+     border: 1px solid #4DBF20; 
+    margin-right: 30px;
+    float: right;
+    color: white;
+    font-weight: bold;
+   
+    /*! text-decoration: none; */
+    /*! margin-top: 4px; */
+}
+.btn-cancel a{
+    margin-top: 4px;
+    margin-left: 2px;
+    text-decoration: none;
+}
+.btn-delete{
+    width: 137px;
+    height: 40px;
+    border: 1px solid black;
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #4DBF20;
+    background-color: #4DBF20;
+    margin-right: 20px;
+}
+.btn-delete i{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: green;
+    background-color: white;
+    padding-left: 3px;
+    margin-left: 13px;
+    margin-top: 7px;
+}
+.btn-cancel{
+    width: 137px;
+    height: 40px;
+    border: 1px solid black;
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #4DBF20;
+    background-color: #4DBF20;
+    margin-right: 30px;
+    
+}
+.btn-cancel i{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: green;
+    background-color: white;
+    padding-left: 1px;
+    margin-left: 13px;
+    margin-top: 7px;
+    padding-top: 0px;
+    font-size: 19px;
+}
+.btn-cancel:hover{
+    background-color: #088A08;
+   
+}
+.btn-cancel:hover a{
+    color: white;
+}
+.btn-cancel:hover .btn-confirm{
+    background-color: #088A08;
+    border: 1px solid #088A08; 
+}
+
+.btn-delete:hover{
+    background-color: #088A08;
+}
+.btn-delete:hover .btn-confirm{
+    background-color: #088A08;
+    border: 1px solid #088A08; 
+}
+#aui-confirm-delete{
+    background-color: whitesmoke;
+    width: 700px;
+    height: 240px;
+    padding-top: 50px;
+    border-radius: 8px;
+}
+
+td #content{
+    margin-left: -610px;
+    margin-top: -200px;
+}

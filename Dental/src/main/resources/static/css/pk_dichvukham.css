@@ -1,0 +1,120 @@
+.re-kham{
+  width: 100%;
+  height: 590px;
+/*! border: 1px solid black; */
+}
+.re-title{
+    width: 100%;
+  height: 200px;
+  clear: both;
+ 
+}
+.re-title button{
+  float: right;
+  width: 100px;
+  height: 35px;
+  background-color: gold;
+  border-radius: 8px;
+ color: #4B8A08;
+  font-weight: bold;
+  margin-top: 66px;
+}
+.re-title button:hover{
+  color: white;
+  background-color: #088A08;
+}
+.re-content{
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 12px;
+  padding-left: 12px;  
+  height: auto;
+  padding-top: 20px;
+}
+.m-content{
+  width: 100%;
+  background-color: greenyellow;
+  padding: 40px 30px;
+}
+.in-left input{
+  width: 13%;
+  margin-left: 110px;
+}
+.lable-option{
+  margin-left: 30px;
+  font-size: 17px;
+  color: #04B431;
+  font-weight: bold;
+  /*! width: 61px; */
+  /*! margin-top: 23px; */
+}
+.in-left select{
+border: 1px solid #ccc;
+border-radius: 3.01px;
+box-shadow: inset 0 1px 3px #ccc;
+color: #333;
+box-sizing: border-box;
+font-size: inherit;
+max-width: 278px;
+width: 100%;
+padding: 6px 5px 5px 5px;
+margin-left: 140px;
+float: right;
+/*! margin-top: 4px; */
+}
+.in-left{
+  width: 451px;
+  height:50px;
+ 
+  margin-left: 73px;
+}
+.in-left lable{
+ 
+}
+.in-left select{
+  margin-left: -50px;
+}
+.in-left input{
+  margin-top: -28px;
+  margin-left: 170px;
+}
+.btn-sub{
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+border: 1px solid #D69E31;
+color: #85592e;
+cursor: pointer;
+float: left;
+font: bold 15px Helvetica, Arial, sans-serif;
+height: 35px;
+position: relative;
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+width: 110px;
+border-radius: 30px;
+background: rgb(254,231,154);
+background: -moz-linear-gradient(top, rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
+padding-left: 6px;
+padding-top: 3px;
+text-decoration: none;
+float: right;
+margin-right: 24px;
+margin-top: 40px;
+  clear: both;
+}
+.container p{
+  margin-top: 60px;
+  float: right;
+ clear: both;
+  font-weight: bold;
+  margin-right: 100px;
+}
+.in-left .used{
+ width: 280px;
+}
+
+#foretoken{
+    margin-left: 173px;
+margin-top: -50px;
+margin-bottom: 10px;
+width: 580px;
+  height: 69px;
+}

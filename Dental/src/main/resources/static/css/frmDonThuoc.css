@@ -1,0 +1,101 @@
+.re-kham{
+  
+  width: 849px;
+  height: auto;
+  margin: 80px 150px;
+  background-color: antiquewhite;
+  padding: 10px 10px;
+  font-family: arial;
+}
+.re-title{
+  
+  width: 100%;
+  height: auto;
+  background-color: lightcyan;
+}
+.re-content{
+  
+}
+.btn-add{
+  width: 100%;
+  height: 50px;
+  /*! border: 1px solid black; */
+}
+.btn-add h4{
+  margin-left: 120px;
+  margin-top: 10px;
+}
+.btn-add button{
+  float: right;
+  margin-top: 167px;
+  width: 120px;
+  height: 35px;
+  float: right;
+  border: 1px solid #848484;
+  background-color: #04B404;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-right: 25px;
+}
+.btn-add button:hover{
+  background-color: whitesmoke;
+  color: green;
+}
+.left{
+width: 55%;
+
+float: left;
+margin-top: 30px;
+margin-bottom: 30px;
+  /*! border: 1px solid black; */
+  
+padding-left: 30px;
+}
+.in-left{
+ 
+  margin-bottom: 8px;
+  
+}
+.in-left label{
+  float: left;
+  width: 34%;
+  
+}
+.in-left input{
+  width: 64%;
+  height: 35px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  padding: 10px 10px;
+}
+#btn-sl{
+  width: 40px;
+}
+.btn-sub{
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+border: 1px solid #D69E31;
+color: #85592e;
+cursor: pointer;
+float: left;
+font: bold 15px Helvetica, Arial, sans-serif;
+height: 35px;
+position: relative;
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+width: 120px;
+border-radius: 30px;
+background: rgb(254,231,154);
+background: -moz-linear-gradient(top, rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
+padding-left: 6px;
+padding-top: 3px;
+text-decoration: none;
+float: right;
+margin-right: 30px;
+margin-top: 30px;
+}
+.btn-sub:hover{
+  background: rgb(254,193,81);
+	background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
+}
+

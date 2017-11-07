@@ -1,0 +1,106 @@
+body{
+  background-color: lavenderblush;
+  padding: 120px 200px;
+}
+.re-kham{
+  width: 832px;
+  height: auto;
+  background-color: white;
+ 
+
+}
+.re-title{
+  width: 100%;
+  height: auto;
+  /*! border: 1px solid black; */
+  clear: both;
+  /*! margin-bottom: 30px; */
+}
+.re-title button{
+  float: right;
+  width: 100px;
+  height: 35px;
+  background-color: gold;
+  border-radius: 8px;
+ color: #4B8A08;
+  font-weight: bold;
+  margin-top: 66px;
+}
+.re-title button:hover{
+  color: white;
+  background-color: #088A08;
+}
+.re-content{
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 12px;
+  padding-left: 12px;  
+  /*! margin-top: 146px; */
+  height: auto;
+}
+.m-content{
+  width: 100%;
+  /*! height:460px; */
+  background-color: greenyellow;
+  padding: 40px 30px;
+}
+.left{
+    width: 45%;
+
+    float: left;
+ 
+    margin-bottom: 30px;
+   margin-right: 45px;
+}
+}
+.right{
+  width: 50%;
+
+float: right;
+margin-right: 10px;
+ 
+}
+.in-left{
+  margin-bottom: 8px;
+  
+}
+.modal-footer{
+  width: 100%;
+
+}
+label{
+  float: left;
+  margin-right: 20px;
+}
+.in-left input{
+  width: 13%;
+  margin-left: 110px;
+}
+.container{
+  
+}
+.btn-sub{
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+border: 1px solid #D69E31;
+color: #85592e;
+cursor: pointer;
+float: left;
+font: bold 15px Helvetica, Arial, sans-serif;
+height: 35px;
+position: relative;
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+width: 120px;
+border-radius: 30px;
+background: rgb(254,231,154);
+background: -moz-linear-gradient(top, rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
+padding-left: 6px;
+padding-top: 3px;
+text-decoration: none;
+float: right;
+margin-right: 30px;
+margin-top: 30px;
+}
+.btn-sub:hover{
+  background: rgb(254,193,81);
+  background: -moz-linear-gradient(top,  rgba(254,193,81,1) 0%, rgba(254,231,154,1) 100%);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Nhà cung cấp</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/popup.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/frmNhaCungCap.css">
+	<style type="text/css">
+    #over {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+    
+   }
+
+#content{
+    position: absolute;
+     z-index:99999;       
+}
+</style>
+
+
+</head>
+<body>
+
+<div id ="frm-container">
+	
+	<div class ="frm-content">
+		<div class ="tabBtn">
+		<a href="/AddSuppliers">
+			<button class="btn" type = "button" >insert</button></a>
+		</div>
+		<!-- tab-thuoc -->
+		<div class ="frm-table" id="thuoc" style ="display: block">
+			             
+			  <table class="table table-hover">
+			    <thead>
+			      <tr class ="tbl-title">
+			        <th>STT</th>
+			        <th>Mã NCC</th>
+			        <th>Nhà cung cấp</th>
+			        <th>Loại hàng</th>
+			        <th>SĐT</th>
+			        <th>Địa chỉ</th>
+			        <th>Email</th>
+			        <th>Action</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    #set($suppliers = $action.getListSuppliers())
+			    #set ($i = 0)
+			    #foreach($sup in $suppliers)
+			    #set($i = $i + 1)
+			      <tr>
+			        <td>$i</td>
+			        <td>$sup.id</td>
+			        <td>$sup.name</td>
+			        <td>$sup.status</td>
+			        <td>$sup.phone</td>
+			        <td>$sup.address</td>
+			        <td>$sup.email</td>
+			        <td>
+			        	<a href=""><span class="fa fa-pencil"></span></a>
+			        	<a href=""><span class="fa fa-building-o"></span></a>
+			        	<a data-id ="${sup.id}" id="a-delete" class="deleteBtn" data-toggle="modal" data-target ="#myDelete"><span class="fa fa-trash"></span></a>
+			        	<div id="content"></div>
+			        </td>
+			      </tr>
+			     #end
+			    </tbody>
+			  </table>
+		</div>	
+		
+		<div id ="myDelete" class ="modal fade" role ="dialog">
+			<div class="modal-dialog" role="document">
+				<form method="POST" action="/DeleteSupplies">
+					<input hidden id="idDeleteInput" name="id" value=""/>
+					<div class ="modal-content-confirm">
+						<div class ="confirm-content">
+							<h4>Are you sure you want to DELETE ?</h4>
+						</div>
+						<div class="confirm-footer">
+							<div class="btn-cancel">
+							    <i class="fa fa-ban" aria-hidden="true"></i>
+								<button type="button" class="btn-confirm " data-dismiss="modal">Cancel</button>
+							</div>
+						 	<div class=" btn-delete">
+						 		<i class="fa fa-times" aria-hidden="true"></i>
+						 		<button type="submit" class="btn-confirm" >Delete </button>
+						 	</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<!--end tab thuoc -->
+		<!-- tab nhà cc vật tư y tế-->
+		
+		<!--end tab nha cc vật tư y tế -->
+	</div>
+</div>
+  <script type="text/javascript">
+	jQuery('a.deleteBtn').click(function() {
+		//alert($(this).data("id"));
+		$('input#idDeleteInput').val($(this).data("id"));
+    });
+</script> 
+
+</body>
+</html>

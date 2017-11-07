@@ -1,0 +1,63 @@
+spring:
+  messages:
+    basename: sms
+  # DataSource
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dental
+    username: root
+    password: 
+    sql-script-encoding: UTF-8
+    # DataSource - Tomcat
+    tomcat:
+      max-active: 15
+      max-idle: 10
+      min-idle: 5
+      initial-size: 2
+  # MVC
+  mvc:
+    favicon:
+      enabled: false
+      
+  # Jackson 
+  jackson:
+    default-property-inclusion: non-null
+    date-format: yyyy-MM-dd HH:mm:ss
+         
+ #Hibernate
+org.hibernate:
+     hibernate-core 3.6.8.Final:
+                             force: true
+                             
+                             
+ 
+# Server
+server:
+  session:
+    cookie:
+      http-only: true
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+
+# Management
+management:
+  add-application-context-header: false
+
+# Logging
+logging:
+  level:
+    root: info
+#    org.springframework: info
+#    org.springframework.security: debug
+#  file: D:/TEMP/spring.log
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-executor-type: reuse
+security:
+  basic:
+    enabled: false 
+    
+

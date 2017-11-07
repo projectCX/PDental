@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Phiếu Khám </title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src = "../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/frmPhieuKham.css">
+	 <link rel="stylesheet" type="text/css" href="../css/pk_dichvukham.css">
+     
+</head>
+<body>
+	<div class="tab_container">
+			
+
+			<input id="tab3" type="radio" name="tabs">
+			<label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Dịch vụ</span></label>
+
+			<input id="tab4" type="radio" name="tabs">
+			<label for="tab4"><i class="fa fa-flask"></i><span>Đơn Thuốc</span></label>
+            <!-- TAB Dịch vụ-->
+			<section id="content3" class="tab-content">
+				
+    <div class="re-kham">
+        <div class="re-title">
+            <form action="#">
+                <div class="modal-content">
+                    <div class="m-content">
+                        <button class="detail" type="submit" id="addDichVu">ADD</button>
+                        <div class="pull-left">
+                           <div class="in-left">
+                                <lable class="lable-option">Kết quả khám:</span>
+                                <textarea class="form-control" rows="2" name="foretoken"  id ="foretoken"></textarea>
+                            </div>
+                            <div class="in-left">
+                                <lable class="lable-option">Loai dich vu:</lable>
+                                <select name="" id="myselect">
+                                    <option data-price="500000" data-code="111" value="1">Nhổ răng khôn hàm trên</option>
+                                    <option data-price="600000" data-code="222" value="2">Nhổ răng khôn hàm trên</option>
+                                    <option data-price="800000" data-code="333" value="3">Trám răng sữa</option>
+                                    <option data-price="700000" data-code="444" value="4">Chữa tủy răng trong</option>
+                                    <option data-price="900000" data-code="5555" value="5">Gắn hạt xoàn nha khoa</option>
+                                </select>
+                            </div>
+                            <div class="in-left">
+                                <lable class="lable-option">Số lượng:</span>
+                                <input type="text" class="form-control" id="quantityService" placeholder="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="re-content">
+            <div class="container">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã dịch vụ</th>
+                            <th>Dịch vụ</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyService">
+                        
+                    </tbody>
+                </table>
+                <p colspan="6">Tổng tiền: <span id="totlePrice">0.0</span></p>
+                <button id="submitBtn" type ="submit" value ="Save" class ="btn-sub">Save</button>
+            </div>
+        </div>
+    </div>
+			</section>
+<!--end tab dịch vụ -->
+
+<!-- tab thuoc-->
+			<section id="content4" class="tab-content">
+				
+		      	<div class="re-kham">
+        <div class="re-title">
+            <form action="#">
+                <div class="modal-content">
+                    <div class="m-content">
+                        <button class="detail" type="submit" id="addDichVu">ADD</button>
+                        <div class="pull-left">
+                            <div class="in-left">
+                                <lable class="lable-option">Thuốc:</lable>
+                                <select name="" id="">
+                                    <option value="#">Thuốc kháng viêm Zinnat 500mg</option>
+                                    <option value="#">Thuốc giảm đau paracetamol</option>
+                                    <option value="#">Thuốc diệt khuẩn Penicilin</option>
+                                    <option value="#">Thuốc chống kho miệng pilocarpin</option>
+                                </select>
+                            </div>
+                            <div class="in-left">
+                                <lable class="lable-option">Số lượng:</span>
+                                <input type="text" class="form-control" id="btn-sl" placeholder="">
+                            </div>
+                            <div class="in-left">
+                                <lable class="lable-option">Liều lượng:</span>
+                                <input type="text" class="form-control used"  placeholder="" class="">
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="re-content">
+            <div class="container">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã thuốc</th>
+                            <th>Thuốc</th>
+                            <th>Số Lượng</th>
+                            <th>Liều lượng</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>DV01</td>
+                            <td>Thuốc kháng viêm Zinnat 500mg</td>
+                            <td>30 viên</td>
+                            <td>3viên/lần- 2 lần/ngày</td>
+                            
+                            <td>
+                                <a href=""><span class="fa fa-pencil"></span></a>
+                                <a href="#" id="a-delete"><span class="fa fa-trash"></span></a>
+                            </td>
+                        </tr>
+      
+                    </tbody>
+                </table>
+                <p colspan="6">Tổng tiền: <span id="totlePrice">0.0</span></p>
+                <button id="submitBtn" type ="submit" value ="Save" class ="btn-sub">Save</button>
+            </div>
+        </div>
+    </div>
+		      	
+			</section>
+<!-- end tab thuoc -->
+		
+		</div>
+<script type="text/javascript" src="../js/frmPhieuKham.js"></script>
+</body>
+</html>

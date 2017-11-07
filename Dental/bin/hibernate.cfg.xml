@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>	
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dental?createDatabaseIfNotExist=true</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!--  <property name="hibernate.enable_lazy_load_no_trans">true</property>-->
+		
+	
+  	
+  
+  	
+  	<mapping class="com.Dental.entity.party1"/>
+  	<mapping class="com.Dental.entity.people"/>
+  
+  	<mapping class="com.Dental.entity.Person"/>
+  	<mapping class="com.Dental.entity.Doctor"/>
+  	<mapping class="com.Dental.entity.WorkSchedule"/>
+  	<mapping class="com.Dental.entity.Patient"/>
+  	<mapping class="com.Dental.entity.MedicalRecord"/>
+  	<mapping class="com.Dental.entity.TreatmentTicket"/>
+  	<mapping class="com.Dental.entity.BillServiceTreatment"/>
+  	<mapping class="com.Dental.entity.TypeOfService"/>
+  	<mapping class="com.Dental.entity.Services"/>
+  	<mapping class="com.Dental.entity.Prescription"/>
+  	
+  	<mapping class="com.Dental.entity.BillExport"/>
+  	<mapping class="com.Dental.entity.BillImport"/>
+  	<mapping class="com.Dental.entity.DetailBillExportMedicalSupplies"/>
+  	<mapping class="com.Dental.entity.DetailBillExportMedicine"/>
+  	<mapping class="com.Dental.entity.DetailBillImportMedicalSupplies"/>
+  	<mapping class="com.Dental.entity.DetailBillImportMedicine"/>
+  	
+  	
+  	<mapping class="com.Dental.entity.MedicalSupplies"/>
+  	<mapping class="com.Dental.entity.Medicine"/>
+  	<mapping class="com.Dental.entity.Supplier"/>
+  	<mapping class="com.Dental.entity.TypeMedicalSupplies"/>
+  	<mapping class="com.Dental.entity.TypeMedicine"/>
+  	
+  	
+  	
+  	
+  	
+  	<mapping class="com.Dental.entity.SalaryLevel"/>
+  	<mapping class="com.Dental.entity.TableSalary"/>
+  	
+  	
+    
+	</session-factory>
+
+</hibernate-configuration>

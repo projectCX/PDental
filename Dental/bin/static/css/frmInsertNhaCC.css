@@ -1,0 +1,80 @@
+#i-main{
+  width: 850px;
+  height: 380px;
+  background-color: #FACC2E;
+  margin-left: 219px;
+  margin-top: 50px;
+  padding: 46px 47px;
+    
+}
+.left{
+  width: 55%;
+  height: 100%;
+  float: left; 
+}
+.right{
+  width: 40%;
+  height: 100%;
+  float: right;
+  margin-right: 10px; 
+  
+}
+.in-left{
+ 
+  margin-bottom: 10px;
+  
+}
+.in-left label{
+  float: left;
+  width: 34%;
+}
+.in-left input{
+  width: 60%;
+  height: 35px;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  padding: 10px 10px;
+}
+#select-ncc{
+  width: 120px;
+  height: 30px;
+  margin-left: 10px;   
+  font-size: 15px;
+  color: #585858;
+}
+.btn-add button{
+  width: 120px;
+height: 35px;
+float: right;
+border: 1px solid #848484;
+background-color: #04B404;
+border-radius: 20px;
+font-size: 16px;
+font-weight: bold;
+color: white;
+/*! margin-bottom: 10px; */
+  margin-top: 80px;
+
+}
+.btn-add{
+  width: 300px;
+  height: 60px;
+  /*! border: 1px solid black; */
+  /*! margin-top: 36px; */
+}
+.btn-add a{
+  width: 120px;
+height: 35px;
+float: left;
+border: 1px solid #848484;
+background-color: #04B404;
+border-radius: 20px;
+font-size: 16px;
+font-weight: bold;
+color: white;
+padding-left: 28px;
+  padding-top: 4px;
+  margin-top: 80px;
+
+}
+

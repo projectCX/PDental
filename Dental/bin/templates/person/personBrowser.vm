@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form nhan vien</title>
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/FormInfoNV.css">
+<link rel="stylesheet" type="text/css" href="../css/popup.css">
+<meta charset="UTF-8">
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+	#parse("header.vm")
+	<div class="image-info">
+
+		<div class="tab-info">
+			<button class="tablinks" onclick="openEmployer(event, 'doctor')">
+				Doctor</button>
+			<button class="tablinks" onclick="openEmployer(event, 'employer')">
+				Employee</button>
+		</div>
+
+		<div class="content">
+			<div class="tabBtn">
+				<button class="btn" type="button">insert</button>
+				<button class="btn" type="button" style="margin-right: 40px"
+					data-toggle="modal" data-target="#myDelete">delete</button>
+			</div>
+			<div id="myDelete" class="modal fade" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content-confirm">
+						<div class="confirm-content">
+							<h4>Are you sure you want to DELETE ?</h4>
+						</div>
+						<div class="confirm-footer">
+							<div class="btn-cancel">
+								<i class="fa fa-ban" aria-hidden="true"></i>
+								<button type="button" class="btn-confirm " data-dismiss="modal">Cancel</button>
+							</div>
+							<div class=" btn-delete">
+								<i class="fa fa-times" aria-hidden="true"></i>
+								<button type="button" class="btn-confirm">Delete</button>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="doctor" class="tabContent" style="display: block">
+
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/songjoongki.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Ngoc Anh
+								</h3>
+								<button class="detail" data-toggle="modal"
+									data-target="#myModal">Detail</button>
+
+								<div id="myModal" class="modal fade" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="m-header"></div>
+											<div class="m-main">
+												<div class="m-left">
+													<img src="../images/songjoongki.jpg">
+												</div>
+												<div class="m-right">
+													<table>
+														<tr>
+															<td>DOCTOR</td>
+															<td>BS. Bùi Ngọc Anh</td>
+														</tr>
+														<tr>
+															<td>CHUYÊN MÔN</td>
+															<td>Nha sĩ</td>
+														</tr>
+														<tr>
+															<td>HỌC VỊ</td>
+															<td>Tiến sĩ</td>
+														</tr>
+														<tr>
+															<td>KINH NGHIỆM</td>
+															<td>5 năm</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+											<div class="m-footer">
+												<h5>Lịch sử công tác</h5>
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>STT</th>
+															<th>Thời gian</th>
+															<th>Công việc</th>
+															<th>Nơi làm việc</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>John</td>
+															<td>Doe</td>
+															<td>john@example.com</td>
+															<td>Hà Nội</td>
+														</tr>
+														<tr>
+															<td>Mary</td>
+															<td>Moe</td>
+															<td>mary@example.com</td>
+															<td>Hà Nội</td>
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Close</button>
+
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+
+
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input class="checkbox1"
+							type="checkbox" name="check" value="check1">
+
+						</label>
+					</div>
+				</div>
+
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/songjoongki.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Ngoc Anh
+								</h3>
+								<button class="detail">Detail</button>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input id="check1"
+							type="checkbox" name="check" value="check1">
+						</label>
+					</div>
+				</div>
+
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/songjoongki.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Ngoc Anh
+								</h3>
+								<button class="detail">Detail</button>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input id="check1"
+							type="checkbox" name="check" value="check1">
+						</label>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+
+
+			<div id="employer" class="tabContent">
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/parkbogum.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Park Bo Gum
+								</h3>
+								<button class="detail" data-toggle="modal"
+									data-target="#myModal1">Detail</button>
+
+								<div id="myModal1" class="modal fade" role="dialog">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="m-header"></div>
+											<div class="m-main">
+												<div class="m-left">
+													<img src="../images/parkbogum.jpg">
+												</div>
+												<div class="m-right">
+													<table>
+														<tr>
+															<td>DOCTOR</td>
+															<td>BS.Park Bo Gum</td>
+														</tr>
+														<tr>
+															<td>CHUYÊN MÔN</td>
+															<td>Nha sĩ</td>
+														</tr>
+														<tr>
+															<td>HỌC VỊ</td>
+															<td>Tiến sĩ</td>
+														</tr>
+														<tr>
+															<td>KINH NGHIỆM</td>
+															<td>5 năm</td>
+														</tr>
+													</table>
+
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary"
+													style="color: black">Save</button>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input id="check1"
+							type="checkbox" name="check" value="check1">
+						</label>
+					</div>
+				</div>
+
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/parkbogum.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Park Bo Gum
+								</h3>
+								<button class="detail">Detail</button>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input id="check1"
+							type="checkbox" name="check" value="check1">
+						</label>
+					</div>
+				</div>
+				<div class="image-view">
+					<div class="left">
+
+						<div class="info-img">
+
+							<div class="avatar">
+								<img src="../images/parkbogum.jpg">
+							</div>
+						</div>
+						<div class="info-detail">
+							<h5>
+								BS.Park Bo Gum
+								</h3>
+								<button class="detail">Detail</button>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label style="font-size: 2em"> <input id="check1"
+							type="checkbox" name="check" value="check1">
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+function openEmployer(evt, string) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(string).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>

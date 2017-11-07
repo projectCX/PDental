@@ -1,0 +1,27 @@
+.btn-search input{
+  width: 310px;
+  height: 37px;
+  font-size: 14px;
+  padding-left: 8px;
+  border-radius: 4px;
+  border: 1px solid #BDBDBD;
+  margin: 6px;
+  
+}
+.btn-search input:focus{
+  border: 1px solid #52A0F3;
+   box-shadow: 1px 0px 6px  #52A0F3 ;
+}
+.btn-search button{
+  width: 45px;
+  height: 33px;
+  background-color: white;
+  border: none;
+  margin-left: -57px;
+  border-radius: 4px;
+}
+.btn-search button:hover{
+  border: 1px solid #BDBDBD;
+  background-color: #F2F2F2;
+  opacity: 0.5;
+}
